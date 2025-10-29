@@ -113,3 +113,22 @@ The project integrates geospatial datasets from multiple sources to evaluate the
 
 - Data Quality Checks: Verifying missing values, nodata pixels, and valid attribute fields is essential before processing.
 
+# **Data Preparation**
+
+This phase involves cleaning, transforming, and organizing your spatial and tabular data so it can be meaningfully analyzed. Since you’re working with geographical raster and vector data, preparation is crucial.
+
+## **Data cleaning**
+
+- **Check coordinate reference systems (CRS):**
+
+  - All your layers (DNI, DIF, GHI, GTI, PVOUT, TEMP, DEM, protected areas, water bodies, forests, urban areas) must be in the same projection (commonly WGS84 - EPSG:4326, or a suitable local projection).
+
+  - If not, reproject them.
+
+- **Remove unnecessary data:**
+
+  - Clip the data to your study area (e.g., your country, region, or specific boundary).
+
+  - This reduces computation and makes results clearer.
+ 
+    
