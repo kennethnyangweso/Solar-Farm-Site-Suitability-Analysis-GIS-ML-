@@ -532,15 +532,11 @@ You can engineer an aggregate index that combines solar irradiance and temperatu
 
 Model Performance Summary (Overfitting/Underfitting Check):
 
-                       Train Accuracy	Test Accuracy	Difference
-
-    Logistic Regression 0.99845	       0.99835	   0.0001
-
-    Random Forest	      1.00000	       1.00000	   0.0000
-
-    Gradient Boosting	  1.00000	       1.00000	   0.0000
-
-    XGBoost            1.00000	       0.99860	   0.0014
+                       Train Accuracy    Test Accuracy    Difference
+Logistic Regression      0.99845          0.99835         0.00010
+Random Forest            1.00000          1.00000         0.00000
+Gradient Boosting        1.00000          1.00000         0.00000
+XGBoost                  1.00000          0.99860         0.00140
 
 ✅ Logistic Regression: Well-balanced (train-test gap = 0.000)
 
