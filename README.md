@@ -540,7 +540,7 @@ Model Performance Summary (Overfitting/Underfitting Check):
 
     Gradient Boosting	  1.00000	       1.00000	   0.0000
 
-    XGBoost            	1.00000	        0.99860	   0.0014
+    XGBoost            1.00000	       0.99860	   0.0014
 
 ✅ Logistic Regression: Well-balanced (train-test gap = 0.000)
 
