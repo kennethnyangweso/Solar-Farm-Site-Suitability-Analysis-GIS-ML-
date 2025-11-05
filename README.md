@@ -392,13 +392,13 @@ You can engineer an aggregate index that combines solar irradiance and temperatu
 📊 Model Performance Comparison:
 
                              R2       MAE       RMSE
-Linear Regression Reg  0.996169   3.700515   41.183286
+    Linear Regression Reg  0.996169   3.700515   41.183286
 
-Random Forest Reg      0.998477   1.716178   16.370216
+    Random Forest Reg      0.998477   1.716178   16.370216
 
-Gradient Boosting Reg  0.993745   5.193694   67.250237
+    Gradient Boosting Reg  0.993745   5.193694   67.250237
 
-XGBoost Reg            0.998397   2.443874   17.238687
+    XGBoost Reg            0.998397   2.443874   17.238687
 
 ### Observations
 
@@ -534,13 +534,13 @@ Model Performance Summary (Overfitting/Underfitting Check):
 
                        Train Accuracy	Test Accuracy	Difference
 
-    Logistic Regression	0.99845	0.99835	0.0001
+    Logistic Regression 0.99845	       0.99835	   0.0001
 
-    Random Forest	1.00000	1.00000	0.0000
+    Random Forest	      1.00000	       1.00000	   0.0000
 
-    Gradient Boosting	1.00000	1.00000	0.0000
+    Gradient Boosting	  1.00000	       1.00000	   0.0000
 
-    XGBoost	1.00000	0.99860	0.0014
+    XGBoost            	1.00000	        0.99860	   0.0014
 
 ✅ Logistic Regression: Well-balanced (train-test gap = 0.000)
 
