@@ -203,7 +203,7 @@ This phase involves cleaning, transforming, and organizing your spatial and tabu
 - Forest cover can also indicate terrain or land-use constraints (steep slopes, conservation), reducing practical suitability even where DNI is moderate.
 - Recommendation: Mask dense forest areas from suitability maps and assess smaller degraded or open-woodland patches separately if needed.
 
-###**Multi-variate Spatial Analysis**
+### **Multi-variate Spatial Analysis**
 
 <img width="866" height="989" alt="image" src="https://github.com/user-attachments/assets/1bb102c5-ea62-4578-9e52-e8477eaa5a19" />
 
