@@ -647,3 +647,63 @@ The successful execution of the Weighted Overlay Suitability Model (WOSM) is exp
 - Slope: Filter out land steeper than a 10-degree slope, which significantly increases construction costs.
 
 3. Ensure Modular Use: Train government and private sector planners on the model's modular framework. This allows them to dynamically adjust the weighting of factors (e.g., prioritize grid proximity over solar irradiance) to tailor the suitability analysis for specific project types (e.g., utility-scale vs. decentralized solar parks).
+
+# Deployment
+
+##  Model Deployment Procedure (Flask + React + Tailwind CSS)
+
+1. Project Overview
+
+- This deployment setup serves two separate models — one for regression (PVOUT prediction) and another for classification (site suitability) — using a Flask backend for the APIs and a React + Tailwind CSS frontend for visualization and interaction.
+
+2. Backend Setup (Flask API)
+
+- Create and activate a Python virtual environment.
+
+- Install all necessary Python dependencies (Flask, Flask-CORS, Pandas, Numpy, Joblib, Scikit-learn).
+
+- Load the trained regression or classification model (.pkl file).
+
+- Define an API endpoint (/predict) that receives input features and returns model predictions in JSON format.
+
+- Test the API locally using http://127.0.0.1:5000/.
+
+- Confirm the API responds correctly with a sample prediction.
+
+- Each model (regression and classification) runs as a separate Flask app, each listening on its own port (e.g., 5000 for regression and 5001 for classification).
+
+3. Frontend Setup (React + Tailwind)
+
+- Create a new React project using create-react-app.
+
+- Install Tailwind CSS, PostCSS, and Autoprefixer for styling.
+
+- Configure Tailwind by updating the content paths and adding base, components, and utilities layers in index.css.
+
+- Install Axios for API communication.
+
+- Create React components for:
+
+- RegressionForm → communicates with the regression Flask API.
+
+- ClassificationForm → communicates with the classification Flask API.
+
+- Use Axios to send POST requests to the backend APIs with user inputs.
+
+- Display prediction results dynamically in the frontend interface.
+
+- Test the frontend at http://localhost:3000 and ensure successful communication with Flask.
+
+4. Connecting Frontend and Backend
+
+- Enable CORS in the Flask backend to allow requests from the React frontend.
+
+- Update the Axios request URLs in the React app to match the backend server address (e.g., http://127.0.0.1:5000/predict).
+
+- Test the full workflow:
+
+- Start Flask (python backend_regression.py).
+
+- Start React (npm start).
+
+- Input sample data and confirm predictions appear on the dashboard.
