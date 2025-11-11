@@ -707,3 +707,9 @@ The successful execution of the Weighted Overlay Suitability Model (WOSM) is exp
 - Start React (npm start).
 
 - Input sample data and confirm predictions appear on the dashboard.
+
+# Results
+<img width="1355" height="614" alt="React App - Google Chrome 11_11_2025 1_36_42 PM" src="https://github.com/user-attachments/assets/00b9eedd-0249-42c4-8e70-784e79cdeb32" />
+
+<img width="1351" height="605" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/afa21713-679a-477e-8968-9cf0ce8db80e" />
+
